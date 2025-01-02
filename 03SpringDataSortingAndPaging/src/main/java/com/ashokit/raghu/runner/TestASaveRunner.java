@@ -1,16 +1,13 @@
 package com.ashokit.raghu.runner;
 
 import java.util.List;
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
 import com.ashokit.raghu.entity.Employee;
 import com.ashokit.raghu.repostiory.EmployeeRepository;
 
-//@Component
+@Component
 //@Order(10)
 public class TestASaveRunner implements CommandLineRunner {
 
@@ -36,10 +33,6 @@ public class TestASaveRunner implements CommandLineRunner {
 						new Employee(18, "AAB", 400.0, "BA")
 						)
 				);
-		
-		
-				
-		
 		
 		}
 }

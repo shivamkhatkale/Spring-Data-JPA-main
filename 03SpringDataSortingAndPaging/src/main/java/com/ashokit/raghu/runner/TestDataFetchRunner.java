@@ -46,8 +46,7 @@ public class TestDataFetchRunner implements CommandLineRunner {
 
 		Iterable<Employee> l1 = repo.findAll(Sort.by("empName"));
 		l1.forEach(System.out::println);
-		
-		
+
 		repo.findAll(Sort.by(Sort.Order.asc("empName"))).forEach(System.out::println);
 
 	}
