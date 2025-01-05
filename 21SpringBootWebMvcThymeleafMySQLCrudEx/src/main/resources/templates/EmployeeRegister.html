@@ -21,6 +21,10 @@
 					DOJ <input type="date" name="empDate" class="form-control" />
 					DEPARTMENT <select name="empDept" class="form-control">
 						<option value="">--SELECT--</option>
+						<option value="">--SELECT--</option>
+						<option value="DEV">--DEV--</option>
+						<option value="QA">--QA--</option>
+						<option value="BA">--BA--</option>
 						<option th:each="dob:${deptList}" th:value="${dob}" th:text="${dob}"></option>
 					</select>
 					ADDRESS

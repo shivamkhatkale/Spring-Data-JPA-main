@@ -3,6 +3,7 @@ package com.app.raghu.service;
 import java.util.List;
 
 import com.app.raghu.entity.Employee;
+import com.app.raghu.exception.EmployeeNotFoundException;
 
 public interface IEmployeeService {
 
@@ -12,7 +13,7 @@ public interface IEmployeeService {
 
     void deleteEmployee(Integer empId);
 
-    Employee getOneEmployee(Integer empId);
+    Employee getOneEmployee(Integer empId) throws EmployeeNotFoundException;
 
     List<Employee> getAllEmployees();
 }
