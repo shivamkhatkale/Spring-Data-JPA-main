@@ -1,5 +1,0 @@
-  RRRR    AAAAA  GGGGG  H   H  U   U
-  R   R  A     A G      H   H  U   U
-  RRRR   AAAAAAA G  GG  HHHHH  U   U
-  R  R   A     A G   G  H   H  U   U
-  R   R  A     A GGGGG  H   H  UUUUU

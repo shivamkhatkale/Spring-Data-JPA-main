@@ -14,7 +14,7 @@
         <module name="02SpringBootDataJpaEx-2" />
         <module name="05SpringBootDataJpaFindBy" />
       </profile>
-      <profile name="Annotation profile for 07SpringBootDataQueryEx2" enabled="true">
+      <profile name="Annotation profile for 20SpringBootWebAppThymeleafExTwo" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -22,6 +22,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="07SpringBootDataQueryEx2" />
+        <module name="20SpringBootWebAppThymeleafExTwo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +36,7 @@
       <module name="02SpringBootDataJpaEx-2 (1)" options="-parameters" />
       <module name="05SpringBootDataJpaFindBy" options="-parameters" />
       <module name="07SpringBootDataQueryEx2" options="-parameters" />
+      <module name="20SpringBootWebAppThymeleafExTwo" options="-parameters" />
       <module name="HB" options="-parameters" />
     </option>
   </component>

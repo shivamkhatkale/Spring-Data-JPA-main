@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/Practice/pom.xml" />
         <option value="$PROJECT_DIR$/05SpringBootDataJpaFindBy/pom.xml" />
         <option value="$PROJECT_DIR$/08SpringBootDataCollectionWithPrimitive/pom.xml" />
+        <option value="$PROJECT_DIR$/21SpringBootWebMvcThymeleafMySQLCrudEx/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
