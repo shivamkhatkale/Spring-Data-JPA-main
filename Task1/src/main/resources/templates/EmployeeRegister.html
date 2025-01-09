@@ -12,14 +12,12 @@
 				<h2>WELCOME TO EMPLOYEE REGISTER PAGE </h2>
 			</div>
 			<div class="card-body">
-				<form th:action="@{/employee/save}" method="POST">
-					NAME <input type="text" name="empName" class="form-control" />
-					GENDER <br/>
-					<input type="radio" name="empGen" value="Male"/> Male
-					<input type="radio" name="empGen" value="Female"/> Female <br/>
-					SALARY <input type="text" name="empSal" class="form-control" />
-					DOJ <input type="date" name="empDate" class="form-control" />
-					DEPARTMENT <select name="empDept" class="form-control">
+				<form th:action="@{/product/save}" method="POST">
+					NAME <input type="text" name="pName" class="form-control" />
+					
+					SALARY <input type="text" name="pSal" class="form-control" />
+					
+					DEPARTMENT <select name="pDept" class="form-control">
 						<option value="">--SELECT--</option>
 						<option th:each="dob:${deptList}" th:value="${dob}" th:text="${dob}"></option>
 					</select>

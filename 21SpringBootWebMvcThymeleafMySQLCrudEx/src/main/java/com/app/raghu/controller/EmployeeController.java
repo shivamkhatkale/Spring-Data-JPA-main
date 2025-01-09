@@ -1,7 +1,6 @@
 package com.app.raghu.controller;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import com.app.raghu.entity.Employee;
 import com.app.raghu.exception.EmployeeNotFoundException;
 import com.app.raghu.service.IEmployeeService;
@@ -24,13 +22,14 @@ public class EmployeeController {
 	@Autowired
 	private IEmployeeService service;
 
-
 	/***
 	 * 1. SHOW REGISTER PAGE This method is used to display Register Page when
 	 * end-user enters /register with GET Type
 	 */
 	@GetMapping("/register")
-	public String showRegPage() {
+	public String showRegPage(Model model) {
+		// For Dynamic DropDown
+		EmployeeUtil.createDeptList(model);
 		return "EmployeeRegister";
 	}
 
@@ -52,6 +51,9 @@ public class EmployeeController {
 		String message = new StringBuffer().append("EMPLOYEE '").append(id).append("' CREATED").toString();
 		// "EMPLOYEE '"+id+"' CREATED";
 		model.addAttribute("message", message);
+
+		// For Dynamic DropDown
+		EmployeeUtil.createDeptList(model);
 		return "EmployeeRegister";
 	}
 
@@ -84,6 +86,8 @@ public class EmployeeController {
 		try {
 			Employee employee = service.getOneEmployee(empId);
 			model.addAttribute("employee", employee);
+			// For Dynamic DropDown
+			EmployeeUtil.createDeptList(model);
 			page = "EmployeeEdit";
 		} catch (EmployeeNotFoundException e) {
 			e.printStackTrace();
@@ -100,7 +104,6 @@ public class EmployeeController {
 
 		service.updateEmployee(employee);
 		attributes.addAttribute("message", "Employee " + employee.getEmpId() + "updated");
-
 		return "redirect:all";
 
 	}

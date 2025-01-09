@@ -20,10 +20,8 @@
 					DEPARTMENT 
 					<select th:field="*{empDept}" class="form-control">
 						<option value="">--SELECT--</option>
-						<option value="DEV">--DEV--</option>
-						<option value="QA">--QA--</option>
-						<option value="BA">--BA--</option>
-				 	</select>
+						<option th:each="dob:${deptList}" th:value="${dob}" th:text="${dob}"></option>
+					</select> 
 						
 					<button type="submit" class="btn btn-success">Update</button>
 					

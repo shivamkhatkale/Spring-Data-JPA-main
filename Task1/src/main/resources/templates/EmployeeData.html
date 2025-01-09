@@ -14,14 +14,14 @@
 				<th>OPERATIONS</th>
 			</tr>
 			<tr th:each="ob:${list}">
-				<td>[[${ob.empId}]]</td>
-				<td>[[${ob.empName}]]</td>
-				<td>[[${ob.empSal}]]</td>
-				<td>[[${ob.empHra}]] / [[${ob.empTa}]]</td>
-				<td>[[${ob.empDept}]]</td>
+				<td>[[${ob.pId}]]</td>
+				<td>[[${ob.pName}]]</td>
+				<td>[[${ob.pSal}]]</td>
+				<td>[[${ob.pHra}]] / [[${ob.pTa}]]</td>
+				<td>[[${ob.pDept}]]</td>
 				<td>
-					<a th:href="@{/employee/delete(id=${ob.empId})}">DELETE </a> 
-					<a th:href="@{/employee/edit(id=${ob.empId})}"> EDIT</a>
+					<a th:href="@{/product/delete(id=${ob.pId})}">DELETE </a> 
+					<a th:href="@{/product/edit(id=${ob.pId})}"> EDIT</a>
 				</td>
 			</tr>
 		</table>

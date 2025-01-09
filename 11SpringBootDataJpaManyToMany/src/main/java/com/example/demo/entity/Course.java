@@ -12,13 +12,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="coursetab")
+@Table(name = "coursetab")
 public class Course {
 	@Id
-	@Column(name="cid")
+	@Column(name = "cid")
 	private Integer courseId;
-	@Column(name="cname")
+	@Column(name = "cname")
 	private String courseName;
-	@Column(name="cfee")
+	@Column(name = "cfee")
 	private Double courseFee;
 }
